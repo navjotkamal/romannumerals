@@ -32,7 +32,27 @@ int romanNumeralCharToDecimal(char roman)
 
 int romanNumeralToDecimal(string &input)
 {
-    return 0;
+    int result = 0;
+
+    for (size_t character = 0; character < input.length(); character++)
+    {
+        // Get the decimal of the Roman Numeral Input
+        int current = romanNumeralCharToDecimal(input[character]);
+
+        // Check if end of list
+        if (character + 1 < input.length())
+        {
+            int next = romanNumeralCharToDecimal(input[character + 1]);
+            result = result + current;
+        }
+        else
+        {
+            result = result + current;
+            character++;
+        }
+    }
+
+    return result;
 }
 
 int _tmain(int argc, _TCHAR* argv[])
