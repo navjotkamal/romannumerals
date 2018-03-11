@@ -30,6 +30,10 @@ int romanNumeralCharToDecimal(char roman)
         return 0;
 }
 
+int romanNumeralToDecimal(string &input)
+{
+    return 0;
+}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -51,7 +55,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
     // Test Code 2 - Given VI; Returns: 6
     string string_input = "VI";
-    cout << "Decimal numeral of " << input << " is " << romanNumeralToDecimal(string_input) << endl;
+    cout << "Decimal numeral of " << string_input << " is " << romanNumeralToDecimal(string_input) << endl;
 
     cin.get();
 
