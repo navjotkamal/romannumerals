@@ -77,6 +77,10 @@ int _tmain(int argc, _TCHAR* argv[])
     string string_input = "VI";
     cout << "Decimal numeral of " << string_input << " is " << romanNumeralToDecimal(string_input) << endl;
 
+    // Test Code 2 - Given IV; Returns: 4
+    string_input = "IV";
+    cout << "Decimal numeral of " << string_input << " is " << romanNumeralToDecimal(string_input) << endl;
+
     cin.get();
 
     return 0;
