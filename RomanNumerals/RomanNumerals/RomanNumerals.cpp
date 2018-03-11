@@ -12,7 +12,22 @@ Converts a roman numeral character to decimal, used for romanNumeralToDecimal fu
 */
 int romanNumeralCharToDecimal(char roman)
 {
-    return 0;
+    if (roman == 'I')
+        return 1;
+    else if (roman == 'V')
+        return 5;
+    else if (roman == 'X')
+        return 10;
+    else if (roman == 'L')
+        return 50;
+    else if (roman == 'C')
+        return 100;
+    else if (roman == 'D')
+        return 500;
+    else if (roman == 'M')
+        return 1000;
+    else
+        return 0;
 }
 
 
