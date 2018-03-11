@@ -43,7 +43,15 @@ int romanNumeralToDecimal(string &input)
         if (character + 1 < input.length())
         {
             int next = romanNumeralCharToDecimal(input[character + 1]);
-            result = result + current;
+            if (current >= next) // Compare them to see which one to use
+            {
+                result = result + current;
+            }
+            else
+            {
+                result = result + next - current;
+                character++;
+            }
         }
         else
         {
