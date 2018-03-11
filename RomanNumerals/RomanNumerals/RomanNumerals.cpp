@@ -7,24 +7,31 @@
 
 using namespace std;
 
+/*
+Converts a roman numeral character to decimal, used for romanNumeralToDecimal function.
+*/
+int romanNumeralCharToDecimal(char roman)
+{
+    return 0;
+}
 
 
 int _tmain(int argc, _TCHAR* argv[])
 {
     // Test Code 1
-    string input = "I";
+    char input = 'I';
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
+    input = 'V';
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    input = 'X';
     std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "V";
+    input = 'L';
     std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "X";
+    input = 'C';
     std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "L";
+    input = 'D';
     std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "C";
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "D";
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
-    input = "M";
+    input = 'M';
     std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
 
     cin.get();
