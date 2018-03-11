@@ -1,5 +1,4 @@
 // RomanNumerals.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <string>
@@ -8,7 +7,7 @@
 using namespace std;
 
 /*
-Converts a roman numeral character to decimal, used for romanNumeralToDecimal function.
+    Converts a roman numeral character to decimal, used for romanNumeralToDecimal function.
 */
 int romanNumeralCharToDecimal(char roman)
 {
@@ -30,6 +29,11 @@ int romanNumeralCharToDecimal(char roman)
         return 0;
 }
 
+/*
+    Converts the Roman Numeral to Decimal Numerals by first converting the input to decimal per character and
+    then taking each character, compare it to the next character to see if it's greater or equal, and if so then add it to
+    result, else take it off by just adding the next character to result.
+*/
 int romanNumeralToDecimal(string &input)
 {
     int result = 0;
