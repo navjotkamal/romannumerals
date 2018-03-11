@@ -37,17 +37,21 @@ int _tmain(int argc, _TCHAR* argv[])
     char input = 'I';
     cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'V';
-    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'X';
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'L';
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'C';
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'D';
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
     input = 'M';
-    std::cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << std::endl;
+    cout << "Decimal numeral of " << input << " is " << romanNumeralCharToDecimal(input) << endl;
+
+    // Test Code 2 - Given VI; Returns: 6
+    string string_input = "VI";
+    cout << "Decimal numeral of " << input << " is " << romanNumeralToDecimal(string_input) << endl;
 
     cin.get();
 
